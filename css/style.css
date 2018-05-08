@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    
+}
+.GraficLogo{
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.menu{
+    width: 800px;
+    margin: auto;
+}
+.topnav{
+    background-color: #fff;
+    font-size: 14px;
+    margin: 15px 15px;
+}
+.topnav a{
+    color: black;
+    text-align: center;
+    padding: 15px 16px;
+    font-size: 15px;
+}
+.topnav a:hover{
+    border-bottom: 2px solid black;
+    
+}
+.topnav .icon {
+    display:  none;
+} 
+.carousel .indicators .indicator-item {
+    height: 15px;
+    width: 15px;   
+}
+.carousel .carousel-item{
+    width: 400px;
+    height: 400px;
+}
+.doctors {
+    height: 700px;
+    overflow: hidden;
+} 
+.services{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.services__item{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    flex: 1 400px;
+    margin: 20px;
+    padding: 15px;       
+}
+.services__item img{
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: scale-down;
+}
+.contact {
+    margin-bottom: 50px;
+}
+#map {
+    height: 500px;
+    width: 100%;
+}
+.title__h2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: #414146;
+    padding-top: 100px;
+    
+}
+.footer__container{
+    display: grid;
+    grid-template-columns: 45% 40%;
+    grid-column-gap: 8%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.contact__containerleft{
+    display: flex;
+    text-align: center;
+    
+}
+.contact__item{
+    flex: 1 400px;
+    padding-top: 50px;       
+}
+
+.networks a{
+   padding: 15px 15px 15px 0;
+}
+
+.fa-youtube:hover{
+    color: red;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-instagram:hover{
+    color: #e4373e;
+}
+.about_us{
+    margin-bottom: 25px;
+}
+.copyright {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
