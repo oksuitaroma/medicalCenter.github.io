@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html"><img class="GraficLogo" src="img/logo.png" alt="logo"></a>
+            <a id="menu"  class="icon"  href="#">&#9776;</a> 
         </div>
         <div class="menu">
             <div class="topnav" id="myTopnav">
@@ -24,15 +26,15 @@
                 <a href="#">Контакти</a>
                 <a href="#">Заявки на прийом</a>
                 <a href="#">Соціальні сети</a>
-                <a id="menu"  class="icon"  href="#">&#9776;</a>            
+                <!-- <a id="menu"  class="icon"  href="#">&#9776;</a>             -->
             </div> 
         </div>
         <main>
             <div class="carousel carousel-slider">
                 <a class="carousel-item" href="#one!"><img src="img/slider-1.jpg"></a>
                 <a class="carousel-item" href="#two!"><img src="img/slider-2.jpg"></a>
-                <a class="carousel-item" href="#three!"><img src="img/slider-1.jpg"></a>
-                <a class="carousel-item" href="#four!"><img src="img/slider-2.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/slider3.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="img/slider4.jpg"></a>
             </div> 
         </main>
          
@@ -46,31 +48,97 @@
             </div>
         </div>
         <div class="carousel doctors">
-            <a class="carousel-item" href="#one!"><img src="img/doctor_1.jpg">
+            <a class="carousel-item open-modal"  href="#one!" data-modal="modal1"><img src="img/doctor_1.jpg">
                 <div class="carousel-fixed-item center">
-                    <h4> Коритовський Олег</h4> 
-                    <h5>Головний врач </h5> 
+                    <h4>Сміщук Віталій Володимирович</h4> 
+                    <!-- <h5>Головний врач </h5>  -->
                 </div>  
             </a>
-            <a class="carousel-item" href="#two!"><img src="img/doctor_2.jpg">
+             
+            <a class="carousel-item open-modal" href="#two!" data-modal="modal2" ><img src="img/doctor_2.jpg">
                 <div class="carousel-fixed-item center">
-                    <h4>Коритовський Олег</h4> 
-                    <h5>Асистент</h5> 
+                    <h4>Коритовський Олег Ігорович</h4> 
+                    
                 </div>  
             </a>
-            <a class="carousel-item" href="#three!"><img src="img/doctor_3.jpg">
+            <a class="carousel-item open-modal" href="#three!" data-modal="modal3" ><img src="img/doctor_3.jpg">
                 <div class="carousel-fixed-item center">
-                    <h4>Оксюта Роман</h4> 
-                    <h5>Директор</h5> 
+                    <h4>Шиленко Юрій Олександрович</h4> 
+                   
                 </div>  
             </a>
-            <a class="carousel-item" href="#four!"><img src="img/doctor_4.jpg">
+            <a class="carousel-item open-modal" href="#four!" data-modal="modal4" ><img src="img/doctor_4.jpg">
                 <div class="carousel-fixed-item center">
-                    <h4>Коритовський Олег</h4> 
-                    <h5>Интерн</h5> 
+                    <h4>Борн Євген Євгенович</h4> 
                 </div>  
             </a>
-        </div> 
+        </div>
+        <div class="modal__doctors">
+            <div class="modal modal1">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal1">&times;</span>
+                    <div> 
+                        <img src="img/doctor_1.jpg" alt=""> 
+                        <h4>Сміщук Віталій Володимирович</h4>
+                    </div>
+                    <div> 
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Deleniti enim quis eaque voluptatum laboriosam nihil dolores iusto
+                             eius nobis natus exercitationem sit aperiam aut quasi deserunt, odio molestias. 
+                             Repellendus, molestias! 
+                        </p>
+                    </div>                  
+                </div>
+            </div>
+            <div class="modal modal2">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal2">&times;</span>
+                    <div> 
+                        <img src="img/doctor_2.jpg" alt=""> 
+                        <h4>Коритовський Олег Ігорович</h4>
+                    </div>
+                    <div> 
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Deleniti enim quis eaque voluptatum laboriosam nihil dolores iusto
+                             eius nobis natus exercitationem sit aperiam aut quasi deserunt, odio molestias. 
+                             Repellendus, molestias! 
+                        </p>
+                    </div>                  
+                </div>
+            </div>
+            <div class="modal modal3">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal3">&times;</span>
+                    <div> 
+                        <img src="img/doctor_3.jpg" alt=""> 
+                        <p>Шиленко Юрій Олександрович</p>
+                    </div>
+                    <div> 
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Deleniti enim quis eaque voluptatum laboriosam nihil dolores iusto
+                             eius nobis natus exercitationem sit aperiam aut quasi deserunt, odio molestias. 
+                             Repellendus, molestias! 
+                        </p>
+                    </div>                  
+                </div>
+            </div>
+            <div class="modal modal4">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal4">&times;</span>
+                    <div> 
+                        <img src="img/doctor_4.jpg" alt=""> 
+                        <p>Борн Євген Євгенович</p>
+                    </div>
+                    <div> 
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Deleniti enim quis eaque voluptatum laboriosam nihil dolores iusto
+                             eius nobis natus exercitationem sit aperiam aut quasi deserunt, odio molestias. 
+                             Repellendus, molestias! 
+                        </p>
+                    </div>                  
+                </div>
+            </div>
+        </div>  
     </article>
     <article class="services__container">
         <div class="title__h2">
@@ -81,8 +149,8 @@
         </div>
         <div class="services">
             <div class="services__item">
-                <img src="img/services_2.jpg ">
-                <h4>Стоматологія</h4>
+                <img src="img/icon/operatori-sanitari.png">
+                <h4>ЗАГАЛЬНА ХІРУРГІЯ</h4>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -92,8 +160,8 @@
 
             </div>
             <div class="services__item">
-                <img src="img/services_1.jpg ">
-                <h4>Хірургія</h4>
+                <img src="img/icon/79a8b7adeaf26ecad22e72be38eb8af5.png">
+                <h4>НЕВІДКЛАДНА ХІРУРГІЯ</h4>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -103,8 +171,8 @@
 
             </div>
             <div class="services__item">
-                <img src="img/services_2.jpg ">
-                <h4>Неврологія</h4>
+                <img src="img/icon/brow_life_icon_(1).png">
+                <h4>ПЛАСТИЧНА ХІРУРГІЯ</h4>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -114,8 +182,8 @@
 
             </div>
             <div class="services__item">
-                <img src="img/services_1.jpg ">
-                <h4>Кардіологія</h4>
+                <img src="img/icon/vascular-man.png">
+                <h4>ХІРУРГІЯ АРТЕРІАЛЬНИХ ТА ВЕНОЗНИХ СУДИН</h4>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -125,8 +193,8 @@
 
             </div>
             <div class="services__item">
-                <img src="img/services_2.jpg ">
-                <h4>Стоматолог</h2>
+                <img src="img/icon/Tobacco-Icon.png">
+                <h4>ХІРУРГІЯ ОРГАНІВ ЧЕРЕВНОЇ ПОРОЖНИНИ</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -136,8 +204,8 @@
 
             </div>
             <div class="services__item">
-                <img src="img/services_2.jpg ">
-                <h4>Стоматолог</h2>
+                <img src="img/icon/surgeon-icon.png">
+                <h4>ГНІЙНА ХІРУРГІЯ</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -171,7 +239,7 @@
                         </div>
                         <div class="contact__item">
                             <i class="medium material-icons">location_on</i>
-                            <p><span>Адрес:</span> <p>Київ, вулиця УЛАКА, 13, 02000.</p></p>
+                            <p><span>Адрес:</span> <p> м.Київ, вулиця Відпочинку,  11, 02000.</p></p>
                         </div>        
                 </div>
                 <div class="contact__containerright">
@@ -191,7 +259,7 @@
                     </div>
                 </div>
         </div>
-       <div class="copyright"> medicalCenter 2018. Все права защищены. by <a href="https://github.com/oksuitaroma">Oksiuta Roman</a></div> 
+       <div class="copyright"> medicalCenter 2018. Все права защищены ©. by <a href="https://github.com/oksuitaroma">Oksiuta Roman</a></div> 
     </footer>
 
 
@@ -209,7 +277,7 @@
     autoplay()   
     function autoplay() {
     $('.carousel').carousel('next');
-    setTimeout(autoplay, 4500);
+    setTimeout(autoplay, 8500);
     }
     });
     $(document).ready(function(){
